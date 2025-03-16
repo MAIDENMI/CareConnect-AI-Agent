@@ -4,7 +4,16 @@ import { Link } from "react-router";
 
 export default function () {
   return (
-    <Card className="p-8">
+    <div className="flex flex-col items-center max-w-4xl mx-auto px-4 py-8 space-y-6">
+      <div className="w-full rounded-lg overflow-hidden shadow-xl">
+        <img 
+          src="/main.jpg" 
+          alt="Welcome Image" 
+          className="w-full h-auto object-cover" 
+        />
+      </div>
+      
+      <Card className="p-8 w-full">
       <CardHeader>
         <CardTitle className="text-xl font-semibold">👋 Hey, Developer!</CardTitle>
       </CardHeader>
@@ -39,5 +48,6 @@ export default function () {
         
       </CardContent>
     </Card>
+    </div>
   );
 }
